@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private int mContador = 0;
@@ -21,5 +22,8 @@ public class MainActivity extends AppCompatActivity {
        mContador++;
 
        mTextViewContador.setText(Integer.toString(mContador));
+
+        Toast toast = Toast.makeText(this,R.string.texto_saudacao,Toast.LENGTH_LONG);
+        toast.show();
     }
 }
