@@ -10,7 +10,6 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="clicouNoOK"
         android:text="@string/botao_ok"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="394dp" />
@@ -19,7 +18,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/botao_cancel"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="394dp" />
 
@@ -31,7 +30,9 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="TextView"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="0"
+        android:textSize="160sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="25dp" />

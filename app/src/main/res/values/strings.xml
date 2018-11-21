@@ -4,4 +4,5 @@
     <string name="button1">Mensagem</string>
     <string name="button2">Contar</string>
     <string name="botao_ok">ok</string>
+    <string name="botao_cancel">cancelar</string>
 </resources>
