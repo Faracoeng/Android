@@ -10,7 +10,12 @@ public class SegundaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segunda);
-        Intent messageIntent = new Intent(this, SegundaActivity.class);
-        startActivity(messageIntent);
+       // Intent messageIntent = new Intent(this, SegundaActivity.class);
+        Bundle extras = getIntent().getExtras();
+        int contador = extras.getInt("contador");
+        //colocar no textView
+
+
+
     }
 }

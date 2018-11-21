@@ -29,6 +29,7 @@
         android:layout_marginTop="28dp"
         android:background="#840909"
         android:backgroundTint="#c06666"
+        android:onClick="exibirMensagem"
         android:text="@string/button1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"

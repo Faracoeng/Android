@@ -1,6 +1,7 @@
 package app.poo.andre.meuapp;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,15 +35,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //@SuppressLint("SetTextI18n")
+
     public void incrementarContador(View view) {
         mContador++;
         mTextViewContador.setText(Integer.toString(mContador));
 
         Toast toast = Toast.makeText(this, "incrementou", Toast.LENGTH_LONG);
-                                                        //ou R.string.texto_saudacao
+        //ou R.string.texto_saudacao
         toast.show();
 
     }
 
+    public void exibirMensagem(View view){
+
+        Intent intent = new Intent(this, SegundaActivity.class);
+        Bundle extras = new Bundle();
+        extras.putInt("contador", mContador);
+        intent.putExtras(extras);
+        startActivity(intent);
+    }
 }
+
