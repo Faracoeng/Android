@@ -10,7 +10,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:onClick="clicouNoOK"
+        android:text="@string/botao_ok"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="394dp" />
 

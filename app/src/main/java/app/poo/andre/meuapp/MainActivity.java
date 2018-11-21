@@ -52,7 +52,24 @@ public class MainActivity extends AppCompatActivity {
         Bundle extras = new Bundle();
         extras.putInt("contador", mContador);
         intent.putExtras(extras);
-        startActivity(intent);
+        //startActivity(intent);
+        startActivityForResult(intent,20);//pode ser qualquer inteiro
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == 20){
+
+            if(resultCode == RESULT_OK){
+                //COLOCAR CONTADOR EM ZERO
+                mTextViewContador.setText("0");
+            }else if(resultCode == RESULT_CANCELED){
+                //IMPRIMIR NO LOG QUE FOI CANCELADO
+
+            }
+        }
     }
 }
 
